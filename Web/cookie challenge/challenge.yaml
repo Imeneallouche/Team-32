@@ -1,0 +1,11 @@
+name: "Cookie Authentication Bypass"
+author: Djili Samir
+category: "Web Exploitation"
+description: "Can you log in as admin without knowing the password?"
+value: 100
+flags:
+  - "NLDAxBzI7yquLzc23NinN5yYUuNbd3"
+hints:
+  - "Check how session management is handled."
+  - "Maybe you don’t need the password at all?"
+connection_info: "http://localhost:8000"

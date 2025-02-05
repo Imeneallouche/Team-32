@@ -1,0 +1,14 @@
+# Use the official PHP image with Apache
+FROM php:7.4-apache
+
+# Set the working directory to /var/www/html (default for Apache)
+WORKDIR /var/www/html
+
+# Copy your PHP files into the container
+COPY cookie.php /var/www/html/cookie.php
+
+# Add flag.txt with hidden content
+RUN echo "congrats you found the flag {NLDAxBzI7yquLzc23NinN5yYUuNbd3}" > /var/www/html/flag_for_cookie.txt
+
+# Expose port 80 to make the app accessible
+EXPOSE 80

@@ -1,0 +1,6 @@
+version: '3'
+services:
+  cookie-auth-bypass:
+    build: .
+    ports:
+      - "8000:80"
