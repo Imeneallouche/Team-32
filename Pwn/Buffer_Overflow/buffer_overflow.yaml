@@ -1,0 +1,21 @@
+author: Abderaouf Benamirouche
+author_link: "https://github.com/Abdou-bnm"
+category: binary-exploitation
+description: |
+  A simple program takes user input, but it **does not check input size** before writing to memory.
+  Can you **exploit this buffer overflow** to get the flag?
+
+  **Your Goal:**
+  - Exploit the **buffer overflow**.
+  - Redirect execution to **call `win()`**.
+  - Read the **flag from `flag.txt`**.
+
+difficulty: easy
+flags:
+  - shellmateCTF{buff3r_0verfl0w_success}
+name: Buffer Overflow
+state: visible
+tags:
+  - PWN
+type: standard
+value: 500
