@@ -1,0 +1,16 @@
+# Use the official PHP image with Apache
+FROM php:7.4-apache
+
+# Set the working directory to /var/www/html (default for Apache)
+WORKDIR /var/www/html
+
+# Copy your PHP files into the container
+COPY get_flag.php /var/www/html/get_flag.php
+COPY xss_basic.php /var/www/html/xss_basic.php
+
+
+# Add flag.txt with hidden content
+RUN echo "congrats you found the flag {RdO2XEt7MwgtrhJSop3ByDo5VHPLsY}" > /var/www/html/flag_for_xss_basic.txt
+
+# Expose port 80 to make the app accessible
+EXPOSE 80

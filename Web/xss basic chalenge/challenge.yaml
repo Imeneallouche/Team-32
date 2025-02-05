@@ -1,0 +1,15 @@
+name: "XSS Basic"
+category: "Web Exploitation"
+difficulty: "Easy"
+description: |
+  This challenge involves exploiting an XSS vulnerability. The user needs to login using credentials
+  found in the browser's developer tools, then craft an XSS payload to alert the admin on their POV page.
+  The user must then verify the correct XSS execution to get the flag.
+author: "Djili Samir"
+flag: "{RdO2XEt7MwgtrhJSop3ByDo5VHPLsY}"
+solution: |
+  1. Inspect the page and find the login credentials in the developer tools.
+  2. Log in using the credentials.
+  3. Send the XSS payload ("<script>alert();</script>") to the admin's POV page.
+  4. Verify that the alert pops up in the admin's POV.
+  5. Return to the user's POV and press the verify button to get the flag.

@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  web:
+    build: .  # Use the Dockerfile in the current directory
+    container_name: xss-basic-challenge
+    ports:
+      - "8080:80"  # Expose port 80 on the container to port 8080 on the host machine
+    environment:
+      - CHALLENGE_NAME="XSS Basic"
+      - FLAG="{RdO2XEt7MwgtrhJSop3ByDo5VHPLsY}"
+    volumes:
+      - ./challenge_files:/var/www/html
+    restart: always
