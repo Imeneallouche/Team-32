@@ -1,0 +1,24 @@
+author: Abderaouf Benamirouche
+author_link: "https://github.com/Abdou-bnm"
+category: cryptography
+description: |
+  The flag has been XOR-encrypted using a **3-character repeating key**. Can you recover the original flag?
+
+  **Your Goal:**
+  - Decrypt the XOR-encrypted message in `encrypted.txt`.
+  - Recover the original flag.
+
+  **Hints:**
+  - The encryption used **XOR with a repeating key**.
+  - The key is **three characters long**.
+  - The flag format is **`shellmateCTF{...}`**.
+
+difficulty: easy
+flags:
+  - shellmateCTF{X0R_1s_f7n}
+name: XOR Cipher Mystery
+state: visible
+tags:
+  - cryptography
+type: standard
+value: 500
