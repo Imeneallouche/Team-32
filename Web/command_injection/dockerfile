@@ -1,0 +1,23 @@
+# Use the official PHP image with Apache
+FROM php:7.4-apache
+
+# Set the working directory to /var/www/html (default for Apache)
+WORKDIR /var/www/html
+
+# Copy your PHP files into the container
+COPY command_injection.php /var/www/html/command_injection.php
+
+# Generate camouflage directories and files
+RUN mkdir /var/www/dir1 /var/www/dir2 /var/www/dir3 && \
+    touch /var/www/dir1/fake1.txt /var/www/dir2/fake2.txt /var/www/dir3/fake3.txt && \
+    for i in $(seq 4 10); do \
+        mkdir /var/www/html/dir$i && \
+        touch /var/www/html/dir$i/fake$i.txt && \
+        echo "don't look in these files" > /var/www/html/dir$i/fake$i.txt; \
+    done
+
+# Add flag.txt with hidden content
+RUN echo "congrats you found the flag {cJsYtrH9E9iOzqd6Lte5JqSjKTcOy2}" > /var/www/html/dir7/flag_for_command_injection.txt
+
+# Expose port 80 to make the app accessible
+EXPOSE 80

@@ -1,0 +1,27 @@
+name: Directory Viewer
+category: Web Exploitation
+author: Djili Samir
+description: |
+  You have access to a web application that allows users to view directory contents.
+  Can you find a way to exploit it and read sensitive files?
+
+value: 500
+tags:
+  - web
+  - command-injection
+  - beginner
+
+files:
+  - command_injection.php
+  - dockerfile
+
+hints:
+  - Think about how the `ls` command is being executed.
+  - Are there any characters being filtered out? Are they enough?
+  - What happens when you try different inputs?
+
+flags:
+  - flag{cJsYtrH9E9iOzqd6Lte5JqSjKTcOy2}
+
+state: visible
+type: dynamic
