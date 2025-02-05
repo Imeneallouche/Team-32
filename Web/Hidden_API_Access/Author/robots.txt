@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /{Hidden API endpoint}.php
+# But "CTF-Scanner" is always welcome...

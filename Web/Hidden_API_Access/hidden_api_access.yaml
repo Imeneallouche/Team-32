@@ -1,0 +1,29 @@
+author: Abderaouf Benamirouche
+author_link: "https://github.com/Abdou-bnm"
+category: web
+deployment:
+  conn_type: http
+  containerPort: 8000
+  isolate: false
+description: |
+  A website contains a **hidden API endpoint** that holds the flag.
+
+  **Your Goal:**
+  - Discover the **hidden API endpoint**.
+  - Figure out how to **access it properly**.
+  - Retrieve the **flag**.
+
+  **Hints:**
+  - Check for hidden API calls using browser Developer Tools (Network Tab).
+  - Try modifying HTTP headers in your request.
+  - Look at the `User-Agent` header. Could it be the key to accessing hidden areas?
+
+difficulty: easy
+flags:
+  - shellmateCTF{H1dd3n_AP1_F0und}
+name: Hidden API Access
+state: visible
+tags:
+  - web
+type: dynamic
+value: 500
