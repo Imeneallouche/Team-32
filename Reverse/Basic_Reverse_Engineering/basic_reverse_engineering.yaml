@@ -1,0 +1,21 @@
+author: Abderaouf Benamirouche
+author_link: "https://github.com/Abdou-bnm"
+category: reverse-engineering
+description: |
+  You have been given a mysterious binary. This program asks for a passcode,
+  and only when the correct passcode is entered, it prints the flag.
+
+  **Your Goal:**
+  - Reverse engineer the binary.
+  - Find the hidden passcode.
+  - Use the passcode to get the flag.
+
+difficulty: easy
+flags:
+  - shellmateCTF{R3vers1ng_1s_C00l}
+name: Basic Reverse Engineering
+state: visible
+tags:
+  - reverse-engineering
+type: standard
+value: 500
