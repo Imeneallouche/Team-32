@@ -1,0 +1,29 @@
+author: Abderaouf Benamirouche
+author_link: "https://github.com/Abdou-bnm"
+category: forensics
+description: |
+  A strange image has been discovered, but something isn’t quite right…  
+  The image appears corrupted and won’t open properly.  
+  Even if you recover it, there’s more than meets the eye.
+
+  **Your Goal:**
+  - Recover the corrupted image if necessary.
+  - Extract all hidden flag pieces using forensic analysis.
+  - Combine them to reconstruct the full flag.
+  - Submit the final flag in the format: **`shellmateCTF{...}`**.
+
+  **Hints:**
+  - Some things leave traces… even in metadata.
+  - A file header is more important than you think.
+  - Look closely at the image and its colors!
+  - There may be something extra hidden inside.
+
+difficulty: easy
+flags:
+  - shellmateCTF{h1dd3n_1nf0rm4t1on_inside_4n_1m4g3_g00d_luck}
+name: The Corrupt Truth
+state: visible
+tags:
+  - forensics
+type: standard
+value: 500
