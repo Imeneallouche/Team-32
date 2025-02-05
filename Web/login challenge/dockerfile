@@ -1,0 +1,14 @@
+# Use the official PHP image with Apache
+FROM php:7.4-apache
+
+# Set the working directory to /var/www/html (default for Apache)
+WORKDIR /var/www/html
+
+# Copy your PHP files into the container
+COPY login_challenge.php /var/www/html/login_challenge.php
+
+# Add flag.txt with hidden content
+RUN echo "congrats you found the flag {NmvkhxMk0wkVzGkZmyh03rhpODTg7I}" > /var/www/html/flag_for_login_challenge.txt
+
+# Expose port 80 to make the app accessible
+EXPOSE 80

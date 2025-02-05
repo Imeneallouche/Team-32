@@ -1,0 +1,11 @@
+name: "Login Response Flag"
+author: Djili Samir
+category: "Web Exploitation"
+description: "Login with any user and check the response headers."
+value: 100
+flags:
+  - "NmvkhxMk0wkVzGkZmyh03rhpODTg7I"
+hints:
+  - "Check the headers after logging in."
+  - "No need to be an admin."
+connection_info: "http://localhost:8000"
