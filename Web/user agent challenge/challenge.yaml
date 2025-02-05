@@ -1,0 +1,24 @@
+name: "User-Agent Challenge"
+author: Djili Samir
+category: "Web Exploitation"
+description: |
+  The login service is running on our server, but there seems to be a hidden flag.
+  Can you figure out how to retrieve it?
+  
+  Access the service at http://localhost:8080
+
+  **Hint:** Try modifying your HTTP headers.
+
+author: "CTF Creator"
+value: 100
+
+flags:
+  - "congrats you found the flag {RdO2XEt7MwsqjKfTEC3ByDo5VHPLsY}"
+
+files:
+  - "user_agent.php"
+
+deployment: "docker-compose up -d"
+tags:
+  - "web"
+  - "headers"
